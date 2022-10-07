@@ -41,5 +41,13 @@ public class Ex03TauBaniqued {
         dojaCat.performForAudience(12);
         dojaCat.changeFavSong(oo);
         dojaCat.singerData();
+        
+        Singer sza = new Singer("SZA", cherryWine);
+        sza.singerData();
+        
+        dojaCat.performForAudience(sza, 12);
+        
+        dojaCat.singerData();
+        sza.singerData();
     }
 }

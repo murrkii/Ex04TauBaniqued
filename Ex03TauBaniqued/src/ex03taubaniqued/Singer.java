@@ -21,10 +21,24 @@ public class Singer {
         this.favoriteSong = favoriteSong;
     }
     
+    public String getName(){
+    return name;
+    }
+        
     public void performForAudience(int audience){
         earnings += 100*audience;
         noOfPerformances++;
         totalPerformances++;
+    }
+    
+    public void performForAudience (Singer otherSinger, int audience){
+        String otherSingerName = otherSinger.getName();
+        int performanceEarnings = 0;
+        performanceEarnings = (100*audience)/2;
+        earnings += (100*audience)/2;
+        noOfPerformances++;
+        totalPerformances++;
+        System.out.printf("%nSPLIT PERFORMANCE%nNames: %s, %s%nEarnings for Each Singer: %s%n", name, otherSingerName, performanceEarnings);
     }
     
     public void changeFavSong(Song faveSongName){

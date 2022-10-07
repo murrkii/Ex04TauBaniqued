@@ -42,7 +42,7 @@ public class Jacket {
     
     public void jacketData(){
         System.out.printf("%nJACKET%nName: %s%nMaterial: %s%nSize: %s%nColor: %s%nDesign: "
-                + "%s%nZipper: %s%nHoodie: %s%n", name, material, 
-                size, color, design, hasZipper, hasHoodie);
+                + "%s%nZipper: %s%nHoodie: %s%nLength: %s%n", name, material, 
+                size, color, design, hasZipper, hasHoodie, length);
     }  
 }
